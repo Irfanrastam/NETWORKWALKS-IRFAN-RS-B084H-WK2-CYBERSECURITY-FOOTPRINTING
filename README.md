@@ -1,218 +1,153 @@
-\# NetworkWalks Cybersecurity Internship – Week 2
+# 🔐 NetworkWalks Cybersecurity Internship — Week 02
 
+![PM1](https://img.shields.io/badge/Module-PM1_Reconnaissance-6D28D9?style=for-the-badge)
+![PM5](https://img.shields.io/badge/Module-PM5_Network_Scanning-0D9488?style=for-the-badge)
+![Kali Linux](https://img.shields.io/badge/Platform-Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/Virtualization-VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
+![Nmap](https://img.shields.io/badge/Scanning-Nmap-4682B4?style=for-the-badge)
 
+  **Footprinting · Reconnaissance · Network Scanning**
 
-\*\*Intern:\*\* IRFAN RS  
+A practical documentation of cybersecurity exercises completed as part of the NetworkWalks internship, covering information gathering, reconnaissance, host discovery and network scanning.
 
-\*\*Organization:\*\* NetworkWalks  
+---
 
-\*\*Project:\*\* Week 2 – Footprinting, Reconnaissance \& Network Scanning  
+## 👨‍💻 Internship Details
 
-\*\*Environment:\*\* Kali Linux | VirtualBox  
-
-\*\*Testing Scope:\*\* Authorized local virtual network lab
-
-
-
-\---
-
-
-
-\## Overview
-
-
-
-This repository documents the practical activities completed during Week 2 of my NetworkWalks Cybersecurity Internship.
-
-
-
-The work focuses on information gathering, footprinting, reconnaissance techniques, network discovery and scanning using industry-standard cybersecurity tools.
-
-
-
-\## Completed Modules
-
-
-
-\### PM1 – Footprinting and Reconnaissance
-
-
-
-Practical exercises using six reconnaissance tools:
-
-
-
-| Tool | Purpose |
-
+| Field | Details |
 |---|---|
+| **Intern** | IRFAN RS |
+| **Organization** | NetworkWalks |
+| **Program** | Cybersecurity Internship |
+| **Week** | 02 |
+| **Focus Areas** | Footprinting, Reconnaissance & Network Scanning |
+| **Environment** | Kali Linux · Oracle VirtualBox |
+| **Assessment Scope** | Authorized educational lab environment |
 
-| WHOIS | Domain registration information gathering |
+## 🎯 Project Overview
 
-| WhatWeb | Website technology identification |
+This repository documents my practical learning and technical activities during **Week 02 of the NetworkWalks Cybersecurity Internship**.
 
-| Nslookup | DNS information gathering |
+The exercises focus on understanding how reconnaissance techniques help security professionals gather information about domains, identify publicly observable technologies, examine DNS records, inspect HTTP responses and discover devices within an authorized network.
 
-| cURL | HTTP response and header analysis |
+The work is organized into two practical modules, with command outputs, screenshots and supporting reports included as evidence.
 
-| wafw00f | Web Application Firewall detection |
+## 🧪 Completed Practical Modules
 
-| DNSRecon | DNS reconnaissance and enumeration |
+### 01 — PM1: Footprinting & Reconnaissance
 
+**Objective:** Explore information-gathering techniques and understand how reconnaissance tools support the initial stages of a security assessment.
 
+| Tool | Practical Application |
+|---|---|
+| WHOIS | Gathered domain registration information |
+| WhatWeb | Identified website technologies and technology indicators |
+| Nslookup | Performed DNS queries and name resolution |
+| cURL | Inspected HTTP responses and headers |
+| wafw00f | Checked for Web Application Firewall indicators |
+| DNSRecon | Performed DNS reconnaissance and enumeration |
 
-\*\*Evidence:\*\* Individual command outputs and screenshots are available in the PM1 directory.
+**Evidence and documentation:**
 
+- [📁 Explore PM1 — Footprinting & Reconnaissance](PM1-Footprinting-Reconnaissance/)
+- [📄 View PM1 documentation](PM1-Footprinting-Reconnaissance/README.md)
 
+### 02 — PM5: Network Scanning with Zenmap
 
-\### PM5 – Network Scanning with Zenmap
+**Objective:** Understand network discovery, host identification, port scanning and network topology visualization in an authorized local virtual network.
 
+**Activities performed:**
 
+- Network discovery and identification of active hosts.
+- Observation of discovered hosts and network information.
+- Port scanning and interpretation of reported results.
+- Network topology visualization using Zenmap.
+- Saving and documenting scan results.
 
-Conducted network discovery and scanning within an authorized local VirtualBox lab environment.
+**Tools:** Zenmap and Nmap
 
+**Evidence and documentation:**
 
+- [📁 Explore PM5 — Zenmap Network Scanning](PM5-Zenmap-Network-Scanning/)
+- [📄 View PM5 documentation](PM5-Zenmap-Network-Scanning/README.md)
 
-Activities included:
+## 🛠️ Tools & Technologies
 
-\- Network discovery and host identification.
+| Category | Tools |
+|---|---|
+| Operating System | Kali Linux |
+| Virtualization | Oracle VirtualBox |
+| Network Scanning | Nmap, Zenmap |
+| Reconnaissance | WHOIS, WhatWeb, DNSRecon |
+| DNS Analysis | Nslookup |
+| HTTP Analysis | cURL |
+| Firewall Detection | wafw00f |
+| Version Control | Git, GitHub |
 
-\- Live-host observation.
-
-\- Port scanning.
-
-\- Network topology visualization.
-
-\- Scan result documentation.
-
-
-
-\*\*Evidence:\*\* Zenmap scan outputs and screenshots are available in the PM5 directory.
-
-
-
-\## Repository Structure
-
-
+## 📂 Repository Structure
 
 ```text
-
-NetworkWalks-Week2/
-
+NETWORKWALKS-WEEK2/
 │
-
+├── README.md
+├── .gitignore
+│
+├── Final-Report/
+│   └── NetworkWalks_Week2_Cybersecurity_Final_Report_IRFAN_RS.pdf
+│
 ├── PM1-Footprinting-Reconnaissance/
-
+│   ├── README.md
 │   ├── WHOIS/
-
 │   ├── WhatWeb/
-
 │   ├── Nslookup/
-
 │   ├── cURL/
-
 │   ├── Wafw00f/
-
 │   └── DNSRecon/
-
 │
-
-├── PM5-Zenmap-Network-Scanning/
-
-│   ├── Scan-Results/
-
-│   ├── Network-Topology/
-
-│   └── Screenshots/
-
-│
-
-└── Final-Report/
-
+└── PM5-Zenmap-Network-Scanning/
+    ├── README.md
+    ├── Scan-Results/
+    ├── Network-Topology/
+    └── Screenshots/
 ```
 
+Each practical module contains its relevant documentation and supporting evidence, including command outputs and screenshots.
 
+## 📄 Final Technical Report
 
-\## Tools and Technologies
+The consolidated report provides supporting documentation for the Week 02 practical activities.
 
+**[📥 View Final Week 02 Technical Report (PDF)](Final-Report/NetworkWalks_Week2_Cybersecurity_Final_Report_IRFAN_RS.pdf)**
 
+## 📚 Key Learning Outcomes
 
-\- Kali Linux
+Through these practical exercises, I gained exposure to:
 
-\- Nmap
+- Footprinting and reconnaissance methodologies.
+- Domain and DNS information gathering.
+- Website technology identification.
+- HTTP response and header analysis.
+- Web Application Firewall detection techniques.
+- Network discovery and host identification.
+- Port scanning using Nmap and Zenmap.
+- Network topology visualization.
+- Technical evidence collection and report documentation.
+- Organizing cybersecurity projects using Git and GitHub.
 
-\- Zenmap
+## 🔒 Authorization & Responsible Use
 
-\- WHOIS
+All network scanning activities documented in this repository were conducted within the authorized local virtual network lab environment as part of educational cybersecurity training.
 
-\- WhatWeb
+The tools and techniques documented here are intended for learning, security awareness and authorized assessment purposes only.
 
-\- Nslookup
+No unauthorized systems were intentionally targeted.
 
-\- cURL
+---
 
-\- wafw00f
+**NETWORKWALKS · CYBERSECURITY INTERNSHIP · WEEK 02**
 
-\- DNSRecon
+Prepared by **IRFAN RS**
 
-\- Oracle VirtualBox
+*Learn · Practice · Document · Improve*
 
-\- Git and GitHub
-
-
-
-\## Learning Outcomes
-
-
-
-Through these exercises, I gained practical exposure to:
-
-
-
-\- Footprinting and reconnaissance methodologies.
-
-\- DNS information gathering.
-
-\- Website technology fingerprinting.
-
-\- HTTP header analysis.
-
-\- Firewall detection techniques.
-
-\- Network discovery and scanning.
-
-\- Interpreting and documenting technical results.
-
-\- Organizing cybersecurity evidence and reports.
-
-
-
-\## Authorization and Disclaimer
-
-
-
-All network scanning activities documented in this repository were conducted within the authorized local virtual lab environment.
-
-
-
-This repository is intended for educational and cybersecurity learning purposes only. No unauthorized systems were intentionally targeted.
-
-
-
-\## Final Report
-
-
-
-The detailed Week 2 technical report is available in the `Final-Report` directory.
-
-
-
-\---
-
-
-
-\*\*Internship:\*\* NetworkWalks  
-
-\*\*Week:\*\* 02  
-
-\*\*Author:\*\* IRFAN RS
-
+---
