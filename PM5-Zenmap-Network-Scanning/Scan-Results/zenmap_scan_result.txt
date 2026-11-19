@@ -1,0 +1,79 @@
+Initiating Parallel DNS resolution of 1 host. at 17:03
+Completed Parallel DNS resolution of 1 host. at 17:03, 0.52s elapsed
+Initiating SYN Stealth Scan at 17:03
+Scanning 2 hosts [1000 ports/host]
+Discovered open port 445/tcp on 10.0.0.1
+Discovered open port 8080/tcp on 10.0.0.1
+Discovered open port 135/tcp on 10.0.0.1
+Completed SYN Stealth Scan against 10.0.0.3 in 0.39s (1 host left)
+Discovered open port 1521/tcp on 10.0.0.1
+Discovered open port 2179/tcp on 10.0.0.1
+Completed SYN Stealth Scan at 17:03, 4.77s elapsed (2000 total ports)
+Initiating Service scan at 17:03
+Scanning 5 services on 2 hosts
+Completed Service scan at 17:03, 21.19s elapsed (5 services on 2 hosts)
+Initiating OS detection (try #1) against 2 hosts
+Retrying OS detection (try #2) against 2 hosts
+NSE: Script scanning 2 hosts.
+Initiating NSE at 17:03
+Completed NSE at 17:03, 14.71s elapsed
+Initiating NSE at 17:03
+Completed NSE at 17:03, 0.05s elapsed
+Initiating NSE at 17:03
+Completed NSE at 17:03, 0.00s elapsed
+Nmap scan report for 10.0.0.1
+Host is up (0.0012s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1521/tcp open  oracle-tns    Oracle TNS listener 11.2.0.2.0 (unauthorized)
+2179/tcp open  vmrdp?
+8080/tcp open  http          Oracle XML DB Enterprise Edition httpd
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: 400 Bad Request
+|_http-server-header: Oracle XML DB/Oracle Database
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=XDB
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|bridge|general purpose
+Running (JUST GUESSING): AT&T embedded (93%), Oracle Virtualbox (88%), Slirp (88%), QEMU (87%)
+OS CPE: cpe:/a:oracle:vm_virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu
+Aggressive OS guesses: AT&T BGW210 voice gateway (93%), Oracle Virtualbox Slirp NAT bridge (88%), QEMU user mode network gateway (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=17 (Good luck!)
+IP ID Sequence Generation: Randomized
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: 1s
+| smb2-time: 
+|   date: 2026-11-19T11:33:48
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.22 ms 10.0.0.1
+
+Nmap scan report for 10.0.0.3
+Host is up (0.00096s latency).
+All 1000 scanned ports on 10.0.0.3 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 08:00:27:90:D2:05 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (92%), Advanced Illumination DCS-100E lighting controller (92%), AudioControl D3400 network amplifier (92%), British Gas GS-Z3 data logger (92%), Chamberlain myQ garage door opener (92%), Daikin DKN Cloud Wi-Fi Adaptor (92%), Daysequerra M4.2SI radio (92%), Denver Electronics AC-5000W MK2 camera (92%), Eve Cam (lwIP 2.1.0 - 2.2.0) (92%), Fatek FBs-CBEH PLC Ethernet communication board (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.96 ms 10.0.0.3
+
+Initiating SYN Stealth Scan at 17:03
