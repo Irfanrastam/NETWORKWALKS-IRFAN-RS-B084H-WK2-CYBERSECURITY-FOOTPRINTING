@@ -173,5 +173,10 @@ These exercises were conducted for educational cybersecurity training purposes. 
 The findings documented here are intended for learning, security awareness and authorized assessment purposes.
 
 ---
+NETWORKWALKS · CYBERSECURITY INTERNSHIP · PM1
 
-\<p align="center">   \*\*NETWORKWALKS · CYBERSECURITY INTERNSHIP · PM1\*\*   \<br>   Prepared by \*\*IRFAN RS\*\*   \<br>   \<sub>Learn · Observe · Analyze · Document\</sub> \</p>
+Prepared by IRFAN RS
+
+Learn · Observe · Analyze · Document
+
+---
