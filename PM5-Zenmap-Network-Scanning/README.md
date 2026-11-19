@@ -1,177 +1,164 @@
-# 🔎 PM1 — Footprinting & Reconnaissance
+# 🌐 PM5 — Network Scanning with Zenmap
 
 <p align="center">
-  --NetworkWalks Cybersecurity Internship · Week 02--
+  <strong>NetworkWalks Cybersecurity Internship · Week 02</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Module-PM1-blue?style=for-the-badge" alt="PM1">
-  <img src="https://img.shields.io/badge/Focus-Reconnaissance-0A8F8F?style=for-the-badge" alt="Reconnaissance">
-  <img src="https://img.shields.io/badge/Platform-Kali%20Linux-black?style=for-the-badge" alt="Kali Linux">
+  <img src="https://img.shields.io/badge/Module-PM5-blue?style=for-the-badge" alt="PM5">
+  <img src="https://img.shields.io/badge/Focus-Network%20Scanning-0A8F8F?style=for-the-badge" alt="Network Scanning">
+  <img src="https://img.shields.io/badge/Scope-Authorized%20Lab-success?style=for-the-badge" alt="Authorized Lab">
 </p>
 
 ## 🎯 Module Overview
 
-This module focuses on practical footprinting and reconnaissance techniques used during the initial stages of a cybersecurity assessment.
+This module focuses on network discovery and scanning using **Zenmap**, the graphical interface for Nmap.
 
-The exercises explore how publicly observable domain information, DNS records, website technologies, HTTP responses and security infrastructure indicators can help build an understanding of a target's digital presence.
+The practical exercises were conducted within an authorized local virtual network lab using Kali Linux and Oracle VirtualBox.
 
-Six reconnaissance tools were used to perform the exercises, with command outputs and screenshots maintained as supporting evidence.
+The objective was to understand how network scanning helps identify active hosts, examine reported open ports and services, and visualize discovered network information.
 
-## 🧪 Tools & Practical Activities
+Scan outputs, XML data, topology information and screenshots are included as supporting evidence.
 
-| No. | Tool | Purpose |
-|---|---|---|
-| 01 | **WHOIS** | Gather domain registration information |
-| 02 | **WhatWeb** | Identify website technologies and technology indicators |
-| 03 | **Nslookup** | Perform DNS queries and name resolution |
-| 04 | **cURL** | Inspect HTTP responses and response headers |
-| 05 | **wafw00f** | Check for Web Application Firewall indicators |
-| 06 | **DNSRecon** | Perform DNS reconnaissance and enumeration |
+## 🖥️ Testing Environment
 
-## 🔬 Practical Exercises & Evidence
-
-### 01 — WHOIS
-
-**Objective:** Understand domain registration information and examine available registration details.
-
-- Executed WHOIS queries.
-- Reviewed the available domain registration information.
-- Saved command output and screenshots.
-
-**Evidence:**
-- [WHOIS command output](WHOIS/01-whois.txt)
-- [WHOIS screenshots](WHOIS/Screenshots/)
-
-### 02 — WhatWeb
-
-**Objective:** Identify technologies and publicly observable information associated with a website.
-
-- Executed WhatWeb against the selected website.
-- Examined identified technologies and server-related indicators.
-- Documented the observed results.
-
-**Evidence:**
-- [WhatWeb command output](WhatWeb/02-whatweb.txt)
-- [WhatWeb screenshot](WhatWeb/Screenshots/whatweb_result_screenshot.png)
-
-### 03 — Nslookup
-
-**Objective:** Understand DNS queries and domain name resolution.
-
-- Performed DNS lookup commands.
-- Examined the returned DNS information.
-- Saved the results for documentation.
-
-**Evidence:**
-- [Nslookup command output](Nslookup/03-nslookup.txt)
-- [Nslookup screenshot](Nslookup/Screenshots/nslookup_result_screenshot.png)
-
-### 04 — cURL
-
-**Objective:** Inspect HTTP responses and understand information exposed through response headers.
-
-- Executed cURL requests.
-- Examined HTTP response information and headers.
-- Recorded the command output.
-
-**Evidence:**
-- [cURL command output](cURL/04-curl-headers.txt)
-- [cURL screenshot](cURL/Screenshots/curl_result_screenshot.png)
-
-### 05 — wafw00f
-
-**Objective:** Check whether a website provides indications of Web Application Firewall protection.
-
-- Executed wafw00f against the selected website.
-- Reviewed the tool's reported findings.
-- Saved the results and screenshot.
-
-**Evidence:**
-- [wafw00f command output](Wafw00f/05-wafw00f.txt)
-- [wafw00f screenshot](Wafw00f/Screenshots/wafwoof_result_screenshot.png)
-
-### 06 — DNSRecon
-
-**Objective:** Explore DNS reconnaissance and examine available DNS information.
-
-- Executed DNSRecon for DNS information gathering.
-- Reviewed the returned records and findings.
-- Saved the output and supporting screenshot.
-
-**Evidence:**
-- [DNSRecon command output](DNSRecon/06-dnsrecon.txt)
-- [DNSRecon screenshot](DNSRecon/Screenshots/dnsrecon_result_screenshot.png)
-
-## 🛠️ Tools & Environment
-
-| Category | Technology |
+| Component | Details |
 |---|---|
 | Operating System | Kali Linux |
-| Domain Information | WHOIS |
-| Website Fingerprinting | WhatWeb |
-| DNS Queries | Nslookup |
-| HTTP Analysis | cURL |
-| WAF Detection | wafw00f |
-| DNS Reconnaissance | DNSRecon |
+| Virtualization Platform | Oracle VirtualBox |
+| Network Scope | Authorized local virtual network lab |
+| Network Scanning Tool | Nmap |
+| Graphical Interface | Zenmap |
+| Evidence Formats | TXT, XML, PDF and PNG |
+
+## 🔬 Practical Activities
+
+### 01 — Network Discovery
+
+**Objective:** Identify active hosts within the authorized local network.
+
+- Performed network discovery using Zenmap.
+- Examined the hosts reported by the scan.
+- Observed available network information.
+
+**Evidence:**
+
+- [Network discovery screenshot](Screenshots/zenmap_ping_screenshot.png)
+- [Saved scan output](Scan-Results/zenmap_scan_result.txt)
+
+### 02 — Host Identification
+
+**Objective:** Understand how scanning results provide information about discovered network hosts.
+
+- Reviewed the hosts reported during scanning.
+- Examined available host information.
+- Documented relevant observations.
+
+### 03 — Port Scanning
+
+**Objective:** Examine ports and services reported by the network scanning tool.
+
+- Performed port scanning using Zenmap.
+- Reviewed the scan results.
+- Examined reported open ports and associated service information.
+
+**Evidence:**
+
+- [Port scanning screenshot](Screenshots/zenmap_port_screenshot.png)
+- [Scan results](Scan-Results/zenmap_scan_result.txt)
+
+### 04 — Intense Scanning
+
+**Objective:** Explore the results produced by an Intense Scan profile in Zenmap.
+
+- Executed the Intense Scan profile.
+- Reviewed the resulting scan information.
+- Saved supporting evidence.
+
+**Evidence:**
+
+- [Intense Scan screenshot](Screenshots/zenmap_intense_scan_screenshot.png)
+
+### 05 — Network Topology Visualization
+
+**Objective:** Understand the visual representation of discovered network information through Zenmap's topology feature.
+
+- Reviewed the generated network topology.
+- Examined the relationships represented in the visualization.
+- Exported topology information for documentation.
+
+**Evidence:**
+
+- [Zenmap topology PDF](Network-Topology/zenmap_topology.pdf)
+- [Zenmap topology screenshot](Screenshots/zenmap_topology_screenshot.png)
+- [Zenmap XML results](Network-Topology/zenmap_results.xml)
+
+## 📊 Scan Documentation
+
+The following files preserve the results and supporting information from the practical exercises.
+
+| File | Description |
+|---|---|
+| `zenmap_scan_result.txt` | Saved scan output |
+| `zenmap_results.xml` | XML scan results |
+| `zenmap_topology.pdf` | Exported network topology |
+| `zenmap_intense_scan_screenshot.png` | Intense Scan evidence |
+| `zenmap_ping_screenshot.png` | Network discovery evidence |
+| `zenmap_port_screenshot.png` | Port scanning evidence |
+| `zenmap_topology_screenshot.png` | Topology visualization evidence |
+
+## 🛠️ Tools & Technologies
+
+- **Kali Linux** — Linux-based cybersecurity testing environment.
+- **Oracle VirtualBox** — Virtualization platform used for the lab.
+- **Nmap** — Network discovery and security scanning tool.
+- **Zenmap** — Graphical interface for running and reviewing Nmap scans.
 
 ## 📚 Key Learning Outcomes
 
 Through this module, I gained practical exposure to:
 
-- Understanding footprinting and reconnaissance methodologies.
-- Gathering domain registration information.
-- Identifying publicly observable website technologies.
-- Performing DNS queries and interpreting DNS information.
-- Examining HTTP response headers.
-- Checking for Web Application Firewall indicators.
-- Performing DNS reconnaissance.
-- Recording technical findings using command outputs and screenshots.
+- Understanding network discovery techniques.
+- Identifying active hosts within a lab network.
+- Examining network scanning results.
+- Understanding reported open ports and services.
+- Working with Zenmap scan profiles.
+- Interpreting Nmap scan output.
+- Visualizing network information using Zenmap topology.
+- Exporting and organizing scan evidence in TXT, XML and PDF formats.
+- Documenting practical network assessment activities.
 
-## 📁 Evidence Directory
+## 📁 Repository Structure
 
 ```text
-PM1-Footprinting-Reconnaissance/
+PM5-Zenmap-Network-Scanning/
 │
 ├── README.md
 │
-├── WHOIS/
-│   ├── 01-whois.txt
-│   └── Screenshots/
+├── Scan-Results/
+│   └── zenmap_scan_result.txt
 │
-├── WhatWeb/
-│   ├── 02-whatweb.txt
-│   └── Screenshots/
+├── Network-Topology/
+│   ├── zenmap_results.xml
+│   ├── zenmap_topology.pdf
+│   └── zenmap_topology_screeenshot.png
 │
-├── Nslookup/
-│   ├── 03-nslookup.txt
-│   └── Screenshots/
-│
-├── cURL/
-│   ├── 04-curl-headers.txt
-│   └── Screenshots/
-│
-├── Wafw00f/
-│   ├── 05-wafw00f.txt
-│   └── Screenshots/
-│
-└── DNSRecon/
-    ├── 06-dnsrecon.txt
-    └── Screenshots/
+└── Screenshots/
+    ├── zenmap_intense_scan_screenshot.png
+    ├── zenmap_ping_screenshot.png
+    ├── zenmap_port_screenshot.png
+    └── zenmap_topology_screenshot.png
 ```
 
 ## 🔒 Authorization & Responsible Use
 
-These exercises were conducted for educational cybersecurity training purposes. Reconnaissance activities should only be performed against systems and domains within an authorized scope.
-
-The findings documented here are intended for learning, security awareness and authorized assessment purposes.
+All network scanning activities documented in this module were conducted within the authorized local virtual network
 
 ---
+NETWORKWALKS · CYBERSECURITY INTERNSHIP · PM1
 
-<p align="center">
-  **NETWORKWALKS · CYBERSECURITY INTERNSHIP · PM1**
-  <br>
-  Prepared by **IRFAN RS**
-  <br>
-  <sub>Learn · Observe · Analyze · Document</sub>
-</p>
+Prepared by IRFAN RS
+
+Learn · Observe · Analyze · Document
+
+---
